@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import axios from "axios";
 
 const SearchComponent = () => {
     const [term,setTerm]=useState('');
-    useEffect(()=>{console.log("I only run once")},[])
+    useEffect(()=>{},[term])
     return (
         <div>
             <div className="ui form">
